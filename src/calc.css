@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  padding: 300px;
+}
+
+.calc-form {
+  min-height: 300px;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.calc-form div {
+  text-align: center;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+}
+
+.number:hover {
+  cursor: default;
+  background-color: rgb(210, 208, 204);
+}
+
+#first-row {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  justify-content: end;
+  padding-right: 5px;
+  outline: none;
+  background-color: rgb(213, 211, 211);
+}
+
+.last-row {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.operation {
+  background: rgb(253, 163, 61);
+  border: 1px solid black;
+}
+
+.operation:hover {
+  cursor: pointer;
+  background: rgb(255, 128, 0);
+}
