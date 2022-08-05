@@ -4,7 +4,7 @@ body {
 }
 
 #root {
-  padding: 300px;
+  padding: 100px 300px;
 }
 
 .calc-form {
@@ -14,7 +14,8 @@ body {
   grid-template-columns: auto auto auto auto;
 }
 
-.calc-form div {
+.calc-form div,
+button {
   text-align: center;
   font-size: 2vw;
   display: flex;
@@ -32,9 +33,22 @@ body {
   grid-column-start: 1;
   grid-column-end: 5;
   justify-content: end;
-  padding-right: 5px;
   outline: none;
   background-color: rgb(213, 211, 211);
+}
+
+#first-row input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 5px;
+  text-align: right;
+  background-color: rgb(213, 211, 211);
+}
+
+#first-row input::placeholder {
+  color: black;
+  font-size: 20px;
 }
 
 .last-row {
